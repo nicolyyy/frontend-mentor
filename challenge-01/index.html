@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<h3>Our Pricing</h3>
+
+<div class="annual-month">
+  <span> Annually</span>
+  <input type="checkbox" checked id="toggle" class="checkbox" />
+  <label id="change" for="toggle" class="switch"></label>
+  <span> Monthly</span>
+</div>
+
+ 
+ <div class="container-cards">
+   <div class="cards">
+      <span> Basic</span> 
+      <h1 id="price-month" >&dollar;19.99</h1>
+      <h1 id="price-annual" style="display: none;">  &dollar;199.99</h1>
+      <h4>500 GB Storage</h4> 
+      <h4>2 Users Allowed</h4> 
+      <h4>Send up to 3 GB</h4> 
+      <button>LEARN MORE  </button>
+   </div>
+
+  <div class="cards">
+      <span>Professional</span> 
+      <h1 id="price-month" >&dollar;24.99</h1> 
+      <h1  id="price-annual" style="display: none;">&dollar;249.99</h1>
+      <h4> 1 TB Storage</h4>
+      <h4> 5 Users Allowed</h4>
+      <h4>Send up to 10 GB </h4>
+      <button>LEARN MORE </button>
+  </div>
+
+  <div class="cards">
+      <span> Master </span>
+      <h1 id="price-month"> &dollar;39.99 </h1>
+      <h1 id="price-annual" style="display: none;">&dollar;399.99 </h1>
+      <h4> 2 TB Storage </h4>
+      <h4> 10 Users Allowed </h4>
+      <h4> Send up to 20 GB </h4>
+      <button> LEARN MORE </button>
+  </div>
+
+</div>
+
+
+<div class="attribution">
+  <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. </p>
+  <p>Coded by <a href="https://github.com/nicolyyy">nicolyyy</a>.</p>
+</div>
+
+</body>
+
+<script src="./js/scripts.js"></script>
+</html>

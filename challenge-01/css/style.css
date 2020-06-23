@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    background: url(../images/bg-top.svg) right top no-repeat, url(../images/bg-bottom.svg)  bottom left no-repeat;
+    background-size: auto;
+    background-color:  hsl(240, 78%, 98%);
+}
+
+h3{
+    text-align: center;
+    padding: 30px 0;
+    color: hsl(233, 13%, 49%);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.annual-month{
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    max-width: 200px;
+    margin: 0 auto;
+    align-items: center;
+    font-weight: 700;
+    font-size: 15px;
+    color:  hsl(234, 14%, 74%);
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.switch { 
+    cursor: pointer;
+    position : relative ;   
+    display : inline-block;   
+    width : 44px;   
+    height : 24px;   
+    background: linear-gradient(hsl(236, 72%, 79%),  hsl(237, 63%, 64%));
+    border-radius: 20px;
+ }
+
+.switch::after {  
+    content: '';  
+    position: absolute;  
+    width: 21px;  
+    height: 22px;  
+    border-radius: 50%;  
+    background-color: white;  
+    top: 1px;   
+    left: 1px;  
+    transition: all 0.3s;
+}
+
+.checkbox:checked + .switch::after {  
+    left : 20px; }.checkbox:checked + .switch {  
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%))
+}
+
+.checkbox {    
+    display : none;
+}
+
+.container-cards{
+    flex-wrap: wrap;
+    max-width: 1020px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.cards{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding:  36px 30px 30px 30px;
+    border: 0;
+    border-radius: 6px;
+    text-align: center;
+    background-color:  hsl(0, 0%, 100%);
+    box-shadow: 0.5px 0.5px 2px 0px rgba(183, 183, 190, 0.829);
+    height: 350px;
+}
+
+.cards span{
+    color: hsl(233, 13%, 49%);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.cards h1{
+    color: hsl(232, 13%, 33%);
+    font-size: 3.2rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.cards h4{
+    border-top:  solid  hsla(0, 0%, 71%, 0.38);
+    border-width: thin;
+    font-size: 15px;
+    color: hsl(233, 13%, 49%);
+    padding: 12px 0;
+}
+
+.cards button{
+    cursor: pointer;
+    display: block;
+    margin-top: 30px;
+    line-height: 1;
+    width: 270px;
+    height: 42px;
+    font-weight: 700;
+    font-size: 13px;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    box-shadow: 2px 0px 5px 1px hsl(236, 72%, 79%);
+    color: hsl(240, 78%, 98%);
+    border: 0px;
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+    transition:  0.8s;
+}
+
+.cards button:hover{
+    background: transparent;
+    border:  solid hsl(236, 53%, 73%);
+    color: hsl(236, 72%, 79%);
+    border-width: thin;
+    box-shadow: none;
+}
+
+.cards:nth-child(2n){
+    margin-bottom: -10px;
+    padding:  55px 30px 20px 30px;
+    background: linear-gradient(hsl(236, 72%, 79%),  hsl(237, 63%, 64%));
+    height: 370px;
+    position: relative;
+    top: -20px;
+}
+
+.cards:nth-child(2n) span{
+    color: hsl(0, 0%, 100%);
+    padding-top: 15px;
+}
+
+.cards:nth-child(2n) h1{
+    padding-top: 25px;
+     padding-bottom: 25px;
+    color: hsl(0, 0%, 100%);
+}
+
+.cards:nth-child(2n) h4{
+    color: hsl(0, 0%, 100%);
+    border-top: solid  hsla(0, 0%, 100%, 0.3);
+    font-size: 15px;
+    border-width: thin;
+}
+
+.cards:nth-child(2n) h4:nth-child(3n +3){
+    border-bottom: solid  hsla(0, 0%, 100%, 0.3);
+    border-width: thin;
+}
+
+.cards:nth-child(2n) button{
+    cursor: pointer;
+    display: block;
+    margin-top: 30px;
+    line-height: 1;
+    width: 270px;
+    height: 42px;
+    font-weight: 700;
+    font-size: 13px;
+    background: hsl(240, 78%, 98%);
+    box-shadow: 1px 0px 1px 1px hsl(236, 87%, 94%);
+    color:  hsl(237, 63%, 64%);
+    border: 0px;
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+}
+
+.cards:nth-child(2n) button:hover{
+    background: transparent;
+    color:hsl(240, 78%, 98%);
+    box-shadow: none;
+    border: solid hsl(240, 78%, 98%);
+    border-width: thin;
+}
+
+.cards h4:nth-child(3n + 3 ){
+    border-bottom: solid  hsla(0, 0%, 71%, 0.45);
+    border-width: thin;
+}
+
+.attribution{
+    max-width: 1020px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    color: hsl(234, 14%, 74%);
+    font-weight: 600;
+    font-size: 12px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.attribution a{
+    text-decoration: none;
+    color:linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%)) 
+}
+

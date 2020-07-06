@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    width: 100%;
+    padding: 25px 0;
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    align-items: center;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+
+.logo{
+  padding-top: 15px;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1180px;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.container-nav a{
+    text-decoration: none;
+    display: block;
+    padding: 0 10px;
+    margin-left: 10px;
+    color: hsl(273, 4%, 51%);
+    letter-spacing: 1.2px;
+}
+
+.btn-view{
+    margin-left: 10px;
+    display: block;
+    height: 44px;
+    padding: 5px 20px;
+    border: 2px solid hsl(270, 9%, 17%);
+    transition: ease-in-out 0.5s;
+    border-radius: 1.5px;
+}
+
+.btn-view a{
+    margin: 0 auto;
+    color:  hsl(270, 9%, 17%) !important;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+}
+
+.btn-view:hover{
+    background-color: hsl(270, 9%, 17%);
+   
+}
+.btn-view a:hover{
+    color: hsl(0, 0%, 98%) !important;
+}
+
+.bg-1{
+    padding-top: 120px;
+    padding-bottom: 60px;
+    width: 100%;
+    background-color: hsl(256, 26%, 20%);
+    flex-wrap: wrap;
+}
+
+.hr{
+    max-width: 150px;
+    margin-left: 90px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.container-bg-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.left-container-bg1{
+    color: hsl(0, 0%, 98%);
+    flex-wrap: wrap;
+}
+
+.left-container-bg1 h1{
+    font-family: 'DM Serif Display', serif;
+    font-size: 4.2rem;
+    margin-bottom: 35px;
+    line-height: 1;
+}
+
+.left-container-bg1 h4{
+    margin: 20px 0;
+    font-weight: normal;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.btn-left-container-bg1 {
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 2px;
+    display: block;
+    height: 48px;
+    padding: 0px 45px;
+    border: 2px solid hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 98%);
+    background-color: transparent;
+    cursor: pointer;
+    letter-spacing: 2px;
+    line-height: 1;
+    transition: ease-in-out 0.5s;
+    font-size: 15px;
+}
+
+.btn-left-container-bg1 a{
+    margin: 0 auto;
+}
+
+.btn-left-container-bg1:hover{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%) !important;
+}
+
+.btn-left-container-bg1 a:hover{
+    color: hsl(256, 26%, 20%) !important;
+}
+
+.right-container-bg1{
+    flex-wrap: wrap;
+}
+.right-container-bg1 img{
+    position: absolute;
+    bottom: -140px;
+    right: 80px;
+    margin-top: -90px;
+    max-width: 500px;
+    max-height: 580px;
+}
+
+.how-we-work{
+    padding-top: 240px;
+    background-color: hsl(0, 0%, 98%);
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.container-how-we-work{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hr-how-we-work{
+    max-width: 150px;
+    margin-bottom: 50px;
+    color: hsl(273, 4%, 51%);
+}
+
+.container-how-we-work h1{
+    font-family: 'DM Serif Display', serif;
+    font-size: 3.8rem;
+    letter-spacing: 2.5px;
+    color: hsl(270, 9%, 17%);
+    margin-bottom: 70px;
+}
+
+.container-boards{
+    max-width: 1180px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-boards img{
+    height: 80px;
+    margin: 25px;
+}
+
+.boards h3{
+    color: hsl(270, 9%, 17%);
+    font-family: 'DM Serif Display', serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.boards h4{
+    color:hsl(273, 4%, 51%);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    max-width: 360px;
+    line-height: 1.6;
+    margin-bottom: 100px;
+}
+
+.find-out-more{
+    background-color: hsl(256, 26%, 20%);
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 50px 0;
+    border-radius: 2px;
+}
+
+.container-find-out-more{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-find-out-more h1{
+    font-family: 'DM Serif Display', serif;
+    color: hsl(0, 0%, 98%);
+    font-size: 3rem;
+    display: flex;
+}
+
+.container-find-out-more button{
+    height: 50px;
+    padding: 0 40px;
+    background-color: transparent;
+    border: 1px solid hsl(0, 0%, 98%);
+    cursor: pointer;
+}
+
+.container-find-out-more button:hover{
+    background-color: hsl(0, 0%, 98%);
+    transition: ease-in-out 0.5s;
+    color: hsl(256, 26%, 20%) !important;
+}
+
+.container-find-out-more a{
+    text-decoration: none;
+    color: hsl(0, 0%, 98%);
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-family: 'Karla', sans-serif;
+}
+
+.container-find-out-more a:hover{
+    color: hsl(256, 26%, 20%) !important;
+}
+
+.footer{
+    width: 100%;
+    background: url(../images/bg-pattern-footer-desktop.svg) left center;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.containter-social-media{
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+   
+}
+
+.icon-social-media img{
+    margin: 0 8px;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+
+.icon-social-media img:hover{
+    filter: brightness(50%);
+}
+
+.footer hr{
+    max-width: 1180px;
+    margin: 0 auto;
+    color: hsl(273, 4%, 51%);
+    margin: 30px auto;
+}
+
+.more-info{
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Karla', sans-serif;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.title{
+    color:hsl(273, 4%, 51%);
+    padding-bottom: 30px;
+}
+
+.infos p{
+    color: hsl(256, 26%, 20%);
+    padding-bottom: 5px;
+    flex-wrap: wrap;
+}
+
+.infos a{
+    text-decoration: none;
+    color: hsl(256, 26%, 20%);
+    transition: ease-in-out 0.3s;
+}
+
+.infos a:hover{
+    filter: brightness(20%);
+}
+
+.attribution{
+    padding: 20px 0;
+    color: hsl(273, 4%, 51%);
+    font-family: 'Karla', sans-serif;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: hsl(256, 26%, 20%);
+}

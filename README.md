@@ -15,8 +15,12 @@ O <a  href="https://www.frontendmentor.io/"> Frontend Mentor</a> é um site que 
 
 <a href="https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC">Challenge-01</a>
 
+<a href="https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8">Challenge-01</a>
+
 ## 💻 Projeto
 Para fazer o deploy dos projetos, foi utilizado a plataforma Netlify.
 
 <a href="https://frontendmentor-challenge01.netlify.app/">Deploy Challenge-01</a>
+
+<a href="https://frontendmentor-challenge02.netlify.app/">Deploy Challenge-02</a>
 

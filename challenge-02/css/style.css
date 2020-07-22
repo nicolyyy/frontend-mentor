@@ -125,7 +125,6 @@ ul{
 .left-container-bg1{
     color: hsl(0, 0%, 98%);
     flex-wrap: wrap;
-    margin-left: 5%;
 }
 
 .left-container-bg1 h1{
@@ -196,7 +195,6 @@ ul{
 
 .container-how-we-work{
     padding: 0% 5%;
-
 }
 
 .hr-how-we-work{

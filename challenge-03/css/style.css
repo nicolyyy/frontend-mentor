@@ -1,0 +1,566 @@
+:root{
+    --colorPrimaryIntroEmailBackground:  hsl(217, 28%, 15%);
+    --colorPrimaryMainBackground: hsl(218, 28%, 13%);
+    --colorBackgroundFooter: hsl(216, 53%, 9%);
+    --colorBackgroundTestimonials: hsl(219, 30%, 18%);
+    --white: hsl(0, 0%, 100%);
+    --cyan: hsl(176, 68%, 64%);
+    --blue: hsl(198, 60%, 50%);
+    --fontHeader: 'Raleway', sans-serif; 
+    --fontBody: 'Open Sans', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background: var(--colorPrimaryMainBackground);
+    color: var(--white);
+    font-family: var(--fontBody);
+    font-size: 14px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 8% 3%;
+    align-items: center;
+    font-family: var(--fontHeader);
+}
+
+header .logo{
+   max-width: 25%;
+}
+
+ul{
+    list-style: none;
+}
+
+nav ul{
+    display: flex;
+}
+nav ul li{
+   padding: 0 .9rem;
+}
+nav ul li a{
+    opacity: .8;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.intro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.intro img{
+   max-width: 85%;
+   margin-bottom: 3rem;
+}
+
+.intro h1{
+    max-width: 350px;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.intro p{
+    padding: 0 2.5rem;
+    white-space: pre;
+    font-size: 1rem;
+    opacity: .8;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.intro button{
+    background: linear-gradient(to right, var(--cyan), var(--blue));
+    border: 0;
+    padding: 1.1rem;
+    max-width: 85%;
+    width: 450px;
+    border-radius: 35px;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 1.3;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 4rem 2rem;
+}
+
+.features img{
+    max-width: 4rem;
+    height: 3.4rem;
+    margin: 1rem 0;
+}
+
+.features h2{
+    font-weight: 700;
+    white-space: nowrap;
+    margin: 0  2rem 1rem 2rem;
+}
+
+.features p{
+    line-height: 1.6;
+    margin-bottom: 3.2rem;
+}
+
+.teams{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 2.5rem;
+    text-align: left;
+}
+
+.teams img{
+    max-width: 100%;
+    margin-bottom: 4rem;
+}
+
+.teams h2{
+    margin-bottom: 1.5rem;
+    text-align: left;
+    /* padding: 0 2rem; */
+}
+
+.teams p{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.teams a{
+    color: var(--cyan);
+    text-decoration: none;
+    font-weight: 700;
+    max-width: 170px;
+    padding: 0.2rem 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    border-bottom: 2px solid var(--cyan);
+}
+
+.teams a::after{
+    display: flex;
+    align-items: center;
+    content: url('/images/icon-arrow.svg');
+    transform: scale(1.3);
+    margin-left: .9rem;
+   
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    margin: 4.5rem 2rem;
+    justify-content: center;
+    position: relative;
+}
+
+.card{
+    background-color: var(--colorBackgroundTestimonials);
+    margin: 1.2rem 0;
+    padding: 2rem 0.9rem;
+    border-radius: 5px;
+    position: relative;
+}
+
+.card:first-child::before{
+    content: url(/images/bg-quotes.png);
+    margin-left: 1rem;
+    transform: scale(.45);
+    position: absolute;
+    top: -2.1rem;
+    left: -1.6rem;
+}
+
+.card p{
+    margin-bottom: 1.5rem;
+    text-align: left;
+    padding: 0 .5rem;
+    font-size: .85rem;
+    line-height: 1.5;
+}
+
+.container-img-name{
+    padding:0 .5rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+         "img"
+         "text" 
+         "text2";
+    position: relative;
+}
+
+.container-img-name img{
+    grid-area: img;
+    border-radius: 50%;
+    max-width: 20%;
+}
+
+.card .container-img-name h2{
+    grid-area: text;
+    margin-top: -2rem;
+    /* line-height: 1; */
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    margin-left: 3rem;
+    font-size: .85rem;
+}
+
+.card .container-img-name p{
+    grid-area: text2;
+    white-space: nowrap;
+    margin: -0.8rem 0 0 3rem;
+    padding: 0;
+    font-size: .6rem;
+}
+
+.card:last-child{
+    margin-bottom: 3rem;
+}
+
+.sign-in{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1.2rem;
+}
+
+.card-sign-in{
+    padding: 4rem 2rem;
+    background: var(--colorPrimaryIntroEmailBackground);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.card-sign-in h2{
+    margin-bottom: 1.5rem;
+}
+
+.card-sign-in p{
+    line-height: 1.5;
+    margin-bottom: 1.8rem;
+}
+
+.card-sign-in input{
+    padding: 1.2rem 1.5rem;
+    width: 100%;
+    margin-bottom: 1.8rem;
+    border-radius: 30px;
+    border: 0;
+}
+
+.card-sign-in input::placeholder{
+    opacity: 0.3;
+}
+
+.card-sign-in button{
+    background: linear-gradient(to right, var(--cyan), var(--blue));
+    border: 0;
+    padding: 1.1rem;
+    max-width: 100%;
+    width: 450px;
+    border-radius: 35px;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 1.3;
+}
+
+.pre-footer{
+    background: var(--colorBackgroundFooter);
+    padding:5rem 2rem 0 2rem;
+}
+
+.pre-footer .logo{
+    margin-bottom: 4rem;
+}
+.info{
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    margin-bottom: 2rem;
+}
+
+.footer-page-links{
+    margin: 4rem 0;
+}
+
+.footer-page-links p, .contact-us p{
+    margin-bottom: 1rem;
+}
+
+.social-media{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    background: var(--colorBackgroundFooter)
+}
+
+.social-media i{
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+footer{
+    padding: 1rem 0;
+    background: var(--colorBackgroundFooter) ;
+}
+
+
+@media(min-width:1100px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 4%;
+        align-items: center;
+        font-family: var(--fontHeader);
+    }
+    header .logo{
+        max-width: 12%;
+    }
+
+    .intro{
+        margin: 0;
+        padding: 2rem 0;
+        width: 100%;
+    }
+    .intro img{
+        max-width: 50%;
+        margin-bottom: 2rem;
+    }
+    .intro h1{
+      font-size: 2rem;
+      white-space: pre-wrap;
+      max-width: 600px;
+    }
+    .intro p{
+        /* padding: 0 2rem; */
+        white-space: pre;
+        font-size: 1.1rem;
+        opacity: .8;
+        max-width: 650px;
+        line-height: 1.5;
+        text-align: center;
+        white-space: pre-wrap;
+        margin-bottom: 1.8rem;
+    }
+    .intro button{
+        width: 25%;
+    }
+    .features{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        margin: 6rem 4rem;
+    }
+
+    .features .container-features{
+      margin: 0 4rem;
+      padding: 0 4rem;
+      text-align: center;
+    }
+    .features .container-features img{
+        max-width: 6rem;
+        height: 4.5rem;
+
+    }
+    .features .container-features p{
+        /* max-width: 400px; */
+        text-align: center;
+        white-space: pre-wrap;
+    }
+    .teams{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       flex-direction: row;
+       flex-wrap: wrap;
+    }
+
+    .teams img{
+        width: 45%;
+        margin: 0;
+    }
+
+    .teams-texts{
+        display: flex;
+        flex-direction: column;
+        max-width: 550px;
+        margin-right: 5rem;
+    }
+
+    .teams-texts h2{
+        max-width: 450px;
+        font-size: 2.5rem;
+        white-space: pre-wrap;
+    }
+    .testimonials{
+        display: flex;
+        flex-direction: row;
+        margin-top: 12rem;
+    }
+    .testimonials .card{
+        margin: 0 2rem;
+    }
+    .testimonials .card p{
+        font-size: 0.9rem;
+    }
+
+    .card .container-img-name img{
+        grid-area: img;
+        border-radius: 50%;
+        max-width: 26%;
+    }
+    .card .container-img-name h2{
+        
+        margin-top: -2.6rem;
+        /* line-height: 1; */
+        margin-bottom: 1.2rem;
+        white-space: nowrap;
+        margin-left: 3.5rem;
+        font-size: 1rem;
+    }
+    .card .container-img-name p{
+        grid-area: text2;
+        white-space: nowrap;
+        margin: -1.2rem 0 0 3.5rem;
+        padding: 0;
+        font-size: .7rem;
+    }
+
+    .sign-in{
+        display: flex;
+        justify-content: center;
+        margin: 0 8rem;
+        align-items: center;
+        text-align: center;
+    }
+    .card-sign-in h2{
+        font-size: 2.5rem;
+    }
+
+    .card-sign-in p{
+       text-align: center;
+       padding: 0 8rem;
+        white-space: pre-wrap;
+        font-size: 1rem;
+    }
+    .container-input-button{
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center !important;
+    }
+    .container-input-button input{
+        max-width: 60%;
+        margin: 0;
+    }
+
+    .container-input-button button{
+        max-width: 32%;
+        margin: 0;
+    }
+
+    .pre-footer{
+        display: flex;
+        align-items: center;
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: 1.4fr 1fr 0.8fr 1fr;
+        grid-template-rows: 20px 200px 0px;
+    }
+
+    .pre-footer .logo{
+        margin: 0;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .pre-footer .location{
+        margin: 0;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+  
+    .pre-footer .phone{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-left: 2rem;
+ 
+    }
+    .pre-footer .email{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        margin-left: 2rem;
+        margin-bottom: 8rem;
+    }
+    .footer-page-links{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .contact-us{
+        grid-column-start: 4;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    
+    
+
+}
+
+
+
+
+
+
+
+
+

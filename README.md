@@ -21,18 +21,14 @@ Feito isso, basta você selecionar o desafio que mais gostou e clicar em <b>Star
 Siiim, é possível! Ao acessar a plataforma e clicar no seu perfil é possível visualizar todos os seus desafios que você iniciou e ao concluí-los você poderá clicar em <b>Submit Solution</b> e enviar as suas soluções para a plataforma.   
 <br></br>
 
-### :rocket: Desafios 
-É possível visualizar as propostas do Frontend Mentor de cada desafio clicando no link correspondente:
+### :rocket: Desafios Concluídos (até o momento)
 
-<a href="https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC">Challenge-01</a>
+- <a href="https://github.com/nicolyyy/frontend-mentor/tree/master/challenge-01"> Pricing component with toggle</a>
 
-<a href="https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8">Challenge-01</a>
-<br></br>
+- <a href="https://github.com/nicolyyy/frontend-mentor/tree/master/challenge-02">Insure landing page</a>
 
-### 💻 Projeto
-Para fazer o deploy dos projetos, foi utilizado a plataforma Netlify.
+- <a href="https://github.com/nicolyyy/frontend-mentor/tree/master/challenge-03">Fylo data storage component</a>
 
-<a href="https://frontendmentor-challenge01.netlify.app/">Deploy Challenge-01</a>
 
-<a href="https://frontendmentor-challenge02.netlify.app/">Deploy Challenge-02</a>
+
 

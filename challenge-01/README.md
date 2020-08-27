@@ -1,6 +1,6 @@
 # Frontend Mentor - Pricing Component
 
-![Layout](/design/desktop-preview.jpg)
+![Layout](./design/desktop-preview.jpg)
 
 #### Seja bem vindo(a) 👋
 
@@ -34,7 +34,7 @@ Para o desafio, os usuários deverão:
 
 Para realizar o deploy da minha aplicação, utilizei uma plataforma gratuito de hospedagem de sites estáticos chamada [Netlify](https://www.netlify.com/)
 
-Clique [aqui](https://frontendmentor-challenge01netlify.app/) para visualizar minha aplicação 🚀
+Clique [aqui](https://frontendmentor-challenge01.netlify.app) para visualizar minha aplicação 🚀
 
 
 

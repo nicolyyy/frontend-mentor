@@ -1,8 +1,6 @@
-# Frontend Mentor - Pricing Component
+# Frontend Mentor - Desafio Pricing Component
 
 ![Layout](./design/desktop-preview.jpg)
-
-#### Seja bem vindo(a) 👋
 
 ## Sobre o Desafio
 

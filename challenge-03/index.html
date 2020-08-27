@@ -10,9 +10,15 @@
   
   <link rel="stylesheet" href="/css/style.css">
 
+  <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
-
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+
+  <!-- Anime Style CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
 
   <!--Font Awesome CDN-->
   <script src="https://kit.fontawesome.com/a383db661c.js" crossorigin="anonymous"></script>
@@ -28,13 +34,13 @@
     <nav>
     <ul>
       <li>
-        <a href="">Features</a>
+        <a href="#features">Features</a>
       </li>
       <li>
-        <a href="">Team</a>
+        <a href="#teams">Team</a>
       </li>
       <li>
-        <a href="">Sign In</a>
+        <a href="#sign-in">Sign In</a>
       </li>
     </ul>
     </nav>
@@ -43,23 +49,21 @@
   <section class="intro">
     <img src="/images/illustration-intro.png" alt="illustration Intro">
     <h1>All your files in one secure location, accessible anywhere.</h1>
-    <p> Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
-
+    <p>Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
     <button>  Get Started</button>
   </section>
 
 
-  <section class="features">
+  <section class="features" id="features">
     <div class="container-features">
       <img src="/images/icon-access-anywhere.svg" alt="Icon Acess Anywhere" >
       <h2>Access your files, anywhere</h2>
-      
       <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
     </div>
+
     <div class="container-features">
       <img src="/images/icon-security.svg" alt="Icon Security" >
       <h2>Security you can trust</h2>
-
       <p>2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.
       </p> 
     </div>
@@ -67,27 +71,24 @@
     <div class="container-features">
       <img src="/images/icon-collaboration.svg" alt="Icon Collaboration" >
       <h2>Real-time collaboration</h2> 
-
       <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
     </div>
 
     <div class="container-features">
       <img src="/images/icon-any-file.svg" alt="Icon Storage" >
       <h2>Store any type of file</h2>
-
       <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
     </div>
   </section>
  
 
-  <section class="teams">
+  <section class="teams" id="teams">
     <img src="/images/illustration-stay-productive.png" alt="illustration">
     <div class="teams-texts">
       <h2>Stay productive, wherever you are</h2>
-    <p> Never let location be an issue when accessing your files. Fylo has you covered for all of your
-    file storage needs.</p>
-    <p>  Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
-
+      <p> Never let location be an issue when accessing your files. Fylo has you covered for all of your
+      file storage needs.</p>
+      <p>  Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
     <a href="#">See how Fylo works</a>
     </div>
   </section>
@@ -99,10 +100,8 @@
   </p> 
   <div class="container-img-name">
     <img src="/images/profile-1.jpg" alt="Photo Satish Patel">
-   <h2>Satish Patel</h2>
-   <p>Founder & CEO, Huddle</p> 
-  
-   
+    <h2>Satish Patel</h2>
+    <p>Founder & CEO, Huddle</p> 
   </div>
   </div>
 
@@ -120,17 +119,15 @@
     <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
     <div class="container-img-name">
       <img src="/images/profile-3.jpg" alt="Photo Iva Boyd">
-
       <h2>Iva Boyd</h2> 
       <p>Founder & CEO, Huddle</p> 
     </div>
   </div>
-
 </section>
 
-<section class="sign-in">
+<section class="sign-in" id="sign-in">
   <div class="card-sign-in">
-    <h2> Get early access today</h2>
+    <h2>Get early access today</h2>
     <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
     questions, our support team would be happy to help you.</p>
     <div class="container-input-button">
@@ -153,32 +150,32 @@
   <div class="info email">
    <img src="/images/icon-email.svg" alt="Icon Email" > <p> example@fylo.com</p>
   </div>
+  
+  <div class="footer-page-links">
+    <p> About Us</p>
+    <p>Jobs</p>
+    <p> Press</p>
+    <p>Blog</p>
+  </div>
 
+  <div class="contact-us">
+    <p>Contact Us</p>
+    <p>Terms</p>
+    <p>Privacy</p>
+  </div>
 
-<div class="footer-page-links">
-  <p> About Us</p>
-  <p>Jobs</p>
-  <p> Press</p>
-  <p>Blog</p>
+  <div class="social-media">
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+  </div>
+
 </div>
 
-<div class="contact-us">
-  <p>Contact Us</p>
-  <p>Terms</p>
-  <p>Privacy</p>
-</div>
-
-
-</div>
-<div class="social-media">
-  <i class="fab fa-facebook-f"></i>
-  <i class="fab fa-twitter"></i>
-  <i class="fab fa-instagram"></i>
-</div>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">nicolyyy</a>.
+      Coded by <a href="https://github.com/nicolyyy">nicolyyy</a>.
     </p>
   </footer>
 </body>

@@ -10,7 +10,8 @@ Poderá ser utilizado qualquer tipo de ferramenta que se achar necessário.
 
 Para o desafio, os usuários deverão:
 - Visualizar o layout ideal do componente, dependendo do tamanho.
-**Bônus** Manter o seu código o mais limpo possível. Certifique-se de utilizar a semântica correta do HTML5 e classes CSS reutilizáveis.
+
+**Bônus**: Manter o seu código o mais limpo possível. Certifique-se de utilizar corretamente os elementos semânticos do HTML5 e classes CSS reutilizáveis.
 
 
 ## Layout
@@ -32,7 +33,7 @@ Para o desafio, os usuários deverão:
 
 Para realizar o deploy da minha aplicação, utilizei uma plataforma gratuito de hospedagem de sites estáticos chamada [Netlify](https://www.netlify.com/)
 
-Clique [aqui](https://frontendmentor-challenge04.netlify.app) para visualizar minha aplicação 🚀
+Clique [aqui](https://frontendmentor-challenge03.netlify.app) para visualizar minha aplicação 🚀
 
 
 

@@ -48,6 +48,7 @@ body{
     }
   }
 
+/* Resposividade Mobile */
 header{
     display: flex;
     justify-content: space-between;
@@ -190,7 +191,7 @@ nav ul li a:hover{
 }
 
 .teams img{
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 4rem;
 }
 
@@ -395,8 +396,7 @@ footer{
 }
 
 
-
-/* Responsividade Desktop 1440px */
+/* Responsividade Desktop  */
 @media(min-width:1100px){
     header{
         display: flex;
@@ -408,6 +408,9 @@ footer{
     }
     header .logo{
         max-width: 12%;
+    }
+    nav ul li a{
+        font-size: 1.1rem;
     }
 
     .intro{
@@ -424,16 +427,16 @@ footer{
         margin-bottom: 2rem;
     }
     .intro h1{
-      font-size: 2rem;
+      font-size: 2.2rem;
       white-space: pre-wrap;
-      max-width: 600px;
+      max-width: 650px;
     }
     .intro p{
         /* padding: 0 2rem; */
         white-space: pre;
         font-size: 1.1rem;
         opacity: .8;
-        max-width: 650px;
+        max-width: 550px;
         line-height: 1.5;
         text-align: center;
         white-space: pre-wrap;
@@ -483,7 +486,7 @@ footer{
     .teams-texts{
         display: flex;
         flex-direction: column;
-        max-width: 550px;
+        max-width: 500px;
         margin-right: 5rem;
     }
 
@@ -531,7 +534,6 @@ footer{
         margin: 2rem 8rem;
         align-items: center;
         text-align: center;
-
     }
     .card-sign-in{
         margin-bottom: -12rem;

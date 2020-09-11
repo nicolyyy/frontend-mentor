@@ -1,0 +1,206 @@
+:root{
+    --primaryColorDarkBlue: hsl(240, 38%, 20%);
+    --primaryColorGrayishBlue: hsl(240, 18%, 77%);
+    font-size: 18px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+#container-principal{
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    background: url(../images/pattern-bg.svg) no-repeat center,  url(../images/pattern-curve.svg) no-repeat bottom left;
+    background-size: 85%;
+    background-position-y: 4%, 100%;
+}
+
+#container-principal .container-first-testimonial, #container-principal .container-second-testimonial{
+    margin: 2.5rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-first-testimonial .container-change-img, .container-second-testimonial .container-change-img  {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.container-change-img img{
+    height:260px;
+    width: 260px;
+    object-fit: fill;
+    border-radius: 4px;
+    animation: bounceInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+.button-change-img{
+    width: 93px;
+    padding: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background: rgb(255, 254, 254);
+    position: absolute;
+    bottom: -5%;
+    -webkit-box-shadow: 1px 4px 134px 1px rgb(36, 36, 36);
+    -moz-box-shadow: 1px 4px 134px 1px rgb(36, 36, 36);
+    box-shadow: 1px 10px 134px 1px rgb(36, 36, 36);
+   
+}
+
+#prev-icon, #next-icon{
+    cursor: pointer;
+    width: 15px;
+    margin: 0 1rem;
+    height: 15px;
+    transition: all .3s;
+}
+
+#prev-icon:hover{
+    transform: translateX(-4px);
+} #next-icon:hover{
+    transform: translateX(4px);
+}
+
+.container-info {
+    animation: bounceInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.5s; /* don't forget to set a duration! */
+    background: url(../images/pattern-quotes.svg) no-repeat top center;
+    background-size: 65px;
+    margin: 4rem 3rem;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.container-info p{
+    margin: 1.2rem 0;
+    font-weight: 300;
+    text-align: center;
+    color: var(--primaryColorDarkBlue);
+    letter-spacing: 1px;
+}
+
+.container-info p:target{
+    transition: 0.6s;
+}
+
+.container-info span{
+    margin: 2px 0;
+    color: var(--primaryColorDarkBlue);
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 1.2rem;
+    letter-spacing: 0.5px;
+}
+.container-info span:nth-last-child(1){
+    opacity: .4;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.attribution{
+    margin: 4rem 0;
+
+}
+
+
+@media(min-width: 1100px){
+    #container-principal{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background: url(../images/pattern-bg.svg) no-repeat right ,  url(../images/pattern-curve.svg) no-repeat bottom left;
+        background-position-y: bottom;
+}
+    #container-principal .container-first-testimonial, #container-principal .container-second-testimonial{
+        flex-direction: row-reverse;
+        margin: 3rem;
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+    }
+
+    .container-first-testimonial .container-change-img,.container-second-testimonial .container-change-img{
+        display: flex;
+        justify-content: right;
+        right: 0;
+        top: 10;
+        width: 50vw;
+        z-index: 0;
+    }
+    .container-change-img img{
+        width: 40vw;
+        height: 100%;
+        margin-right: 10rem;
+    }
+
+    .button-change-img{
+        width: 93px;
+        padding: 0.85rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 40px;
+        background: rgb(255, 254, 254);
+        position: absolute;
+        bottom: -5%;
+        left: 2rem;
+        -webkit-box-shadow: 1px 4px 134px 1px rgb(36, 36, 36);
+        -moz-box-shadow: 1px 4px 134px 1px rgb(36, 36, 36);
+        box-shadow: 1px 10px 134px 1px rgb(36, 36, 36);
+    }
+
+    .container-info{
+        width: 46vw;
+        margin-right: -8rem;
+        z-index: 1;
+        text-align: left;
+        background: url(../images/pattern-quotes.svg) no-repeat top left;
+        background-position-x: 6rem;
+        background-size: 110px;
+       
+    }
+    .container-info p{
+        margin: 1.2rem 0;
+        font-weight: 300;
+        text-align: left;
+        color: var(--primaryColorDarkBlue);
+        letter-spacing: 1px;
+        line-height: 2.3rem;
+        font-size: 1.6rem;
+    }
+
+    .container-info span{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container-info span:nth-last-child(1){
+        opacity: .7;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .attribution{
+        padding: 0;
+        margin: 0;
+     
+    }
+}
+
+

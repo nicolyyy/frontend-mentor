@@ -29,6 +29,8 @@ Siiim, é possível! Ao acessar a plataforma e clicar no seu perfil é possível
 
 - <a href="https://github.com/nicolyyy/frontend-mentor/tree/master/challenge-03">Fylo landing page</a>
 
+- <a href="https://github.com/nicolyyy/frontend-mentor/tree/master/challenge-04">Coding Bootcamp Testimonials Slider</a>
+
 
 
 

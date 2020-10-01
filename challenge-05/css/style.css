@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --primaryColorGreen:  hsl(163, 72%, 41%);
+    --primaryColorRed:  hsl(356, 69%, 56%);
+    --colorFacebook: hsl(208, 92%, 53%);
+    --colorTwitter:  hsl(203, 89%, 53%);
+    
+    --colorInstagram: linear-gradient(to right,hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+    --toggleDarkTheme: linear-gradient(to right, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+    --toggleLightTheme:  hsl(230, 22%, 74%);
+    --lightThemeBackground:  hsl(0, 0%, 100%);
+    --lightThemePaleBlue:hsl(225, 100%, 98%);
+    --lightThemeGrayishBlueCard:hsl(227, 47%, 96%);
+    --lightThemeGrayishBlueText:hsl(228, 12%, 44%);
+    --lightThemeColorText:hsl(230, 17%, 14%);
+    --darkThemeBlueBackground:hsl(230, 17%, 14%);
+    --darkThemeDarkBlueTopBG: hsl(232, 19%, 15%);
+    --darkThemeDesaturatedBlueCard: hsl(228, 28%, 20%);
+    --darkThemeDesaturaredBlueText:hsl(228, 34%, 66%);
+    --darkThemeColorText:hsl(0, 0%, 100%);
+
+}
+
+html, body{
+    height: 100%;
+}
+
+html{
+    background: var(--lightThemeBackground);
+    color: var(--lightThemeColorText);
+}
+
+header{
+    padding: 2.5rem 5rem 12rem 5rem;
+    background: var(--lightThemePaleBlue);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav-content h1{
+    letter-spacing: .9px;
+}
+
+nav .nav-content p{
+    margin-top: .3rem;
+    opacity: .8;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.main-cards{
+    padding: 0 5rem;
+    margin-top: -6rem;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--lightThemeGrayishBlueCard);
+    padding: 4rem;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+.cards:nth-child(1){
+    border-top: 4px solid var(--colorFacebook);
+    border-radius: 5px;
+}
+
+.cards:nth-child(2){
+    border-top: 4px solid var(--colorTwitter);
+    border-radius: 5px;
+}
+
+.cards:nth-child(3){
+    border-top: 4px solid var(--colorInstagram);
+    border-radius: 5px;
+}
+
+.cards:nth-child(4){
+    border-top: 4px solid var(--primaryColorRed);
+    border-radius: 5px;
+}
+
+.cards span{
+    padding: 0.3rem 0;
+}
+
+.cards span:nth-child(1){
+    font-weight: 700;
+}
+
+.cards span:nth-child(2){
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.cards span:nth-child(3){
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cards span:nth-child(4){
+    color: var(--primaryColorGreen);
+    font-weight: 700;
+}
+

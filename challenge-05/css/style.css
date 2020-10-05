@@ -10,9 +10,8 @@
     --primaryColorRed:  hsl(356, 69%, 56%);
     --colorFacebook: hsl(208, 92%, 53%);
     --colorTwitter:  hsl(203, 89%, 53%);
-    
     --colorInstagram: linear-gradient(to right,hsl(37, 97%, 70%),hsl(329, 70%, 58%));
-    --toggleDarkTheme: linear-gradient(to right, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+    --toggleDarkTheme: linear-gradient( hsl(210, 78%, 56%),hsl(146, 68%, 55%));
     --toggleLightTheme:  hsl(230, 22%, 74%);
     --lightThemeBackground:  hsl(0, 0%, 100%);
     --lightThemePaleBlue:hsl(225, 100%, 98%);
@@ -36,8 +35,16 @@ html{
     color: var(--lightThemeColorText);
 }
 
+.green{
+    color: var(--primaryColorGreen);
+}
+
+.red{
+    color: var(--primaryColorRed);
+}
+
 header{
-    padding: 2.5rem 5rem 12rem 5rem;
+    padding: 2.5rem 4rem 12rem 4rem;
     background: var(--lightThemePaleBlue);
 }
 
@@ -58,7 +65,7 @@ nav .nav-content p{
 }
 
 .main-cards{
-    padding: 0 5rem;
+    padding: 0 4rem;
     margin-top: -6rem;
 }
 
@@ -73,6 +80,8 @@ nav .nav-content p{
     background-color: var(--lightThemeGrayishBlueCard);
     padding: 4rem;
     margin-right: 1rem;
+    width: 320px;
+    height: 280px;
     text-align: center;
 }
 
@@ -87,8 +96,10 @@ nav .nav-content p{
 }
 
 .cards:nth-child(3){
-    border-top: 4px solid var(--colorInstagram);
-    border-radius: 5px;
+    border-image-source: var(--colorInstagram);
+    border-top: 4px solid;
+    border-image-slice: 1 ;
+    border-radius: 10px !important;
 }
 
 .cards:nth-child(4){
@@ -116,7 +127,79 @@ nav .nav-content p{
 }
 
 .cards span:nth-child(4){
-    color: var(--primaryColorGreen);
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.overview{
+    padding: 4rem;
+}
+
+.overview h2{
+    margin-bottom: 1.6rem;
+    color: var(--lightThemeGrayishBlueText);
+    letter-spacing: 1.5px;
+}
+
+.container-overview{
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+   
+}
+
+.cards-overview{
+    margin-right: 1rem;
+    width: 280px;
+    height: 140px;
+    margin-bottom: 2rem;
+    background-color: var(--lightThemeGrayishBlueCard);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-radius: 4px;
+}
+
+.cards-overview h4{
+    color: var(--lightThemeGrayishBlueText);
+}
+
+.first-row{
+    display: flex;
+    padding-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second-row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    align-items: center;
     font-weight: 700;
 }
+
+.second-row span:nth-child(1){
+    font-size: 2rem;
+    position: relative;
+}
+
+.second-row .green::before{
+    content: url(/images/icon-up.svg);
+    position: relative;
+    bottom: 4px;
+    right: 5px;
+}
+
+.second-row .red::before{
+    content: url(/images/icon-down.svg);
+    position: relative;
+    bottom: 4px;
+    right: 5px;
+}
+
+
 

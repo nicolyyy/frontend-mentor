@@ -11,7 +11,7 @@
     --colorFacebook: hsl(208, 92%, 53%);
     --colorTwitter:  hsl(203, 89%, 53%);
     --colorInstagram: linear-gradient(to right,hsl(37, 97%, 70%),hsl(329, 70%, 58%));
-    --toggleDarkTheme: linear-gradient( hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+    --toggleDarkTheme: linear-gradient( -50deg,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
     --toggleLightTheme:  hsl(230, 22%, 74%);
     --lightThemeBackground:  hsl(0, 0%, 100%);
     --lightThemePaleBlue:hsl(225, 100%, 98%);
@@ -54,16 +54,101 @@ nav{
 }
 
 nav .nav-content h1{
-    letter-spacing: .9px;
-}
-
-nav .nav-content p{
-    margin-top: .3rem;
-    opacity: .8;
-    font-size: .8rem;
+    letter-spacing: .6px;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
+nav .nav-content p{
+    margin-top: .4rem;
+    opacity: .6;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.switch-theme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1.25rem;
+}
+
+.switch-theme span{
+    color: var(--lightThemeGrayishBlueText);
+    font-weight: 700;
+    opacity: 0.6;
+}
+
+.button-toggle{
+    visibility: hidden;
+    position: absolute;
+    margin-left: -9999px;
+}
+
+.button-toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+.checkbox + label {
+    cursor: pointer;
+    width: 56px;
+    margin-left: 1rem;
+    height: 27px;
+    border-radius: 25px;
+    background-color: var(--toggleLightTheme);
+    position: relative;
+    transition:  all 0.5s;
+  }
+
+.checkbox + label::before, 
+.checkbox + label::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+}
+
+.checkbox + label::before{
+    right: 1px;
+    top: 1px;
+    width: 25px;
+    /* background-color: #f1f1f1; */
+    border-radius: 100%;
+    transition: all .4s;
+}
+
+.checkbox + label::after {
+    width: 25px;
+    right: 1px;
+    top: 1px;
+    background-color: #f1f1f1;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s;
+  }
+
+  .checkbox:checked + label:before {
+    cursor: pointer;
+    width: 56.2px;
+    background-color: #f1f1f1;
+    background-image: var(--toggleDarkTheme);
+    height: 28px;
+    top: 0px;
+    right: 0px;
+    border-radius: 25px;
+
+  }
+  .checkbox:checked + label:after {
+    transform: translateX(-29px);
+    background-color: var(--darkThemeDesaturatedBlueCard);
+    
+  }
 .main-cards{
     padding: 0 4rem;
     margin-top: -6rem;
@@ -78,11 +163,33 @@ nav .nav-content p{
     display: flex;
     flex-direction: column;
     background-color: var(--lightThemeGrayishBlueCard);
-    padding: 4rem;
+    padding: 2rem 4rem;
     margin-right: 1rem;
     width: 320px;
     height: 280px;
     text-align: center;
+    cursor: pointer;
+    transition: background .8s;
+}
+
+.cards:hover{
+    filter: brightness(.9);
+}
+
+.user{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2.5rem;
+    padding: 0;
+    align-items: center;
+}
+
+.user p{
+    font-weight: 700;
+    color: var(--lightThemeGrayishBlueText);
+    letter-spacing: -2;
+    font-size: .9rem;
+    margin-left: -.5rem;
 }
 
 .cards:nth-child(1){
@@ -107,28 +214,22 @@ nav .nav-content p{
     border-radius: 5px;
 }
 
-.cards span{
-    padding: 0.3rem 0;
-}
-
-.cards span:nth-child(1){
-    font-weight: 700;
-}
-
 .cards span:nth-child(2){
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     font-weight: 700;
+    letter-spacing: 1.5px;
 }
 
 .cards span:nth-child(3){
-    font-weight: 400;
+    font-weight:200;
+    margin-top: .2rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 4.6px;
 }
 
 .cards span:nth-child(4){
     font-weight: 700;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 }
 
 .overview{
@@ -161,6 +262,12 @@ nav .nav-content p{
     flex-direction: column;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     border-radius: 4px;
+    cursor: pointer;
+    transition: .8;
+}
+
+.cards-overview:hover{
+    filter: brightness(.9);
 }
 
 .cards-overview h4{
@@ -187,19 +294,49 @@ nav .nav-content p{
     position: relative;
 }
 
-.second-row .green::before{
+.green::before{
     content: url(/images/icon-up.svg);
     position: relative;
     bottom: 4px;
     right: 5px;
 }
 
-.second-row .red::before{
+.red::before{
     content: url(/images/icon-down.svg);
     position: relative;
     bottom: 4px;
     right: 5px;
 }
 
+.dark-theme-title{
+    color: var(--darkThemeColorText) !important;
+}
 
+.dark-theme-bg{
+    background-color: var(--darkThemeBlueBackground);
+    color: var(--darkThemeColorText);
+}
 
+.dark-theme-header{
+    background-color: var(--darkThemeDarkBlueTopBG);
+}
+.dark-theme-card{
+    background-color: var(--darkThemeDesaturatedBlueCard);
+    color: var(--darkThemeColorText);
+}
+
+.attribution{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.attribution p{
+    padding: 1rem 0; 
+    font-size: .8rem;
+    font-weight: 700;
+}
+.attribution a{
+    text-decoration: none;
+    color: var(--colorFacebook);
+}

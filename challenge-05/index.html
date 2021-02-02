@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | [Social Media Dashboard]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -22,8 +22,12 @@
         <h1> Social Media Dashboard</h1>
         <p>Total Followers: 23,004</p>
       </div>
-      <div class="toggle">
-        Dark Mode
+      <div class="switch-theme">
+       <span>Dark Mode</span> 
+       <div class="toggle">
+        <input id="checkbox" class="button-toggle checkbox" type="checkbox">
+        <label for="checkbox"></label>
+       </div>
       </div>
     </nav>
   </header>
@@ -31,25 +35,37 @@
  <section class="main-cards">
    <div class="container">
      <div class="cards">
-      <span class="facebook">@nathanf</span>
+      <div class="user">
+          <img src="/images/icon-facebook.svg" alt="Logo Facebook">
+          <p class="facebook">@nathanf</p>
+      </div>
       <span>1987</span> 
-      <span> Followers</span> 
+      <span>Followers</span> 
       <span class="green">12 Today</span>  
      </div>
      <div class="cards">
-      <span class="twitter">@nathanf</span>
+       <div class="user">
+          <img src="/images/icon-twitter.svg" alt="Logo Twitter">
+          <p class="twitter">@nathanf</p>
+      </div>
       <span>1044</span> 
       <span>Followers</span> 
       <span class="red">99 Today</span> 
      </div>
      <div class="cards">
-      <span class="instagram">@realnathanf</span>
+       <div class="user">
+          <img src="/images/icon-instagram.svg" alt="Logo Instagra">
+          <p class="instagram">@realnathanf</p>
+        </div>
      <span>11k</span> 
      <span>Followers</span> 
      <span class="green">1099 Today</span> 
      </div>
      <div class="cards">
-     <span class="youtube">Nathan F.</span> 
+       <div class="user">
+        <img src="/images/icon-youtube.svg" alt="Logo Youtube">
+         <p class="youtube">Nathan F.</p> 
+        </div>
      <span>8239</span> 
      <span>Subscribers</span> 
      <span class="red">144 Today</span> 
@@ -58,7 +74,7 @@
  </section>
 
  <section class="overview">
-   <h2>Overview - Today</h2>
+   <h2 id="titleOverview">Overview - Today</h2>
    <div class="container-overview">
      <div class="cards-overview">
        <div class="first-row">
@@ -140,41 +156,12 @@
        <span class="red">12%</span>
       </div>
     </div>
-    
-    
-    
-
    </div>
  </section>
- 
-
- 
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
- 
-  
-
- 
-  
-  
-
-  
-  
-  
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/nicolyyy">nicolyyy</a>.</p>
   </div>
+  <script src="./js/scripts.js"></script>
 </body>
 </html>
